@@ -1,0 +1,101 @@
+footer {
+    background-color: var(--primary);
+}
+
+@media (min-width: 800px)  {
+
+    #message {
+        position: absolute;
+        z-index: 200;
+        background: rgba(255, 255, 255, 0.46);
+        border-radius: 5px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.7px);
+        -webkit-backdrop-filter: blur(6.7px);
+        padding: 1px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        height: clamp(160px, 19vw, 210px);
+        .logo {
+            margin-right: 5vw;
+            margin-left: 3vw;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+            font-size: clamp(5px, 1vw, 12px);
+            span {
+                height: 100%;
+            }
+            img {
+                height: clamp(140px, 16vw, 180px);
+                width: clamp(140px, 16vw, 180px);
+            }
+        }
+
+        .links_list {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1vw;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                height: 100%;
+                li {
+                    font-size: clamp(16px, 2vw, 20px)
+                }
+
+                li:not(:first-child) {
+                    width: 15vw;
+                    margin-left: 5vw;
+                }
+
+                li:not(:first-child):hover {
+                    transition-duration: .5s;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .menu_list {
+            display: flex;
+            align-items: center;
+            margin-right: 5vw;
+            height: 100%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0;
+                padding: 0 0 0 1vw;
+                border-left: black solid 1px;
+                font-size: clamp(16px, 2vw, 30px);
+                height: 90%;
+                text-align: center;
+                list-style: none;
+
+                li:hover{
+                    cursor: pointer;
+                    transition-duration: .5s;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

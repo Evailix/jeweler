@@ -1,0 +1,38 @@
+<html>
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <script src="/static/js/footer.js"></script>
+    <footer>
+        <span id="message" style="display: none;"></span>
+        <div class="logo">
+            <img src="/static/img/logo.svg"/>
+            <span>&copy Перлина Вишуканості</span>
+        </div>
+        <div class="links_list">
+            <ul>
+                <li>Матеріали</li>
+                <li onclick="window.location='/gold/'">Золото</li>
+                <li onclick="window.location='/silver/'">Срібло</li>
+                <li onclick="window.location='/platuna/'">Платина</li>
+                <li onclick="window.location='/perls/'">З перлинами</li>
+            </ul>
+        </div>
+        <div class="links_list">
+            <ul>
+                <li>Про автора</li>
+                <li onclick="window.open('https://github.com/Evailix')">GitHub</li>
+                <li onclick="copyToClipboard('evailix'); show_message()">Discord</li>
+                <li onclick="copyToClipboard('38nY4sxZLdRvRAR4sUGWEDCn7HqnjpmXeJ'); show_message()">Крипта (BTC)</li>
+                <li onclick="window.location='http://radio.grafgrei.tech/'">Спонсор</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="menu_list">
+            <ul>
+                <li onclick="window.location='/'">ГОЛОВНА</li>
+                <li onclick="window.location='/discounts/'">АКЦІЇ</li>
+                <li onclick="window.location='/contacts/'">КОНТАКТИ</li>
+                <li onclick="window.location='/about/'">ПРО НАС</li>
+            </ul>
+        </div>
+    </footer>
+</html>

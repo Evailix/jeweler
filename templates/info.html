@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ page_name }}</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/info.css">
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <main>
+            <span>
+                {{ page_info|safe }}
+            </span>
+        </main>
+        {% include 'footer.html' %}
+    </body>
+</html>

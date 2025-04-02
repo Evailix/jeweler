@@ -1,0 +1,103 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 95vw;
+    min-height: 45vw;
+    margin-bottom: 5vw;
+
+    .article {
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 1vw 1.66vw;
+        background-color:  var(--alight);
+        width: 28vw;
+        height: 45vw;
+
+        .article_img {
+            width: 80%;
+            aspect-ratio : 1;
+            margin: 10%;
+            background-size: 100%;
+            display: flex;
+            border-radius: 10px;
+            align-items: end;
+            justify-content: end;
+
+            .price {
+                display: flex;
+                flex-direction: column;
+                font-size: clamp(15px, 2vw, 30px);
+                text-align: center;
+                justify-content: center;
+                line-height: 100%;
+                width: 50%;
+                height: 20%;
+                background-color: white;
+                border-radius: 10px 0;
+                .discount {
+                    margin: 0;
+                    padding: 0;
+                    height: 30%;
+                    font-size: clamp(4px, 1vw, 15px);
+                    text-align: end;
+                    margin-right: 10%;
+                    text-decoration: line-through solid black !important;
+                }
+            }
+
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 10%;
+            span {
+                display: flex;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .title {
+                color: gray;
+                font-size: clamp(7px, 1.5vw, 20px);
+                text-wrap: nowrap;
+                margin-bottom: 0.2vw;
+            }
+
+            .desc {
+                font-size: clamp(4px, 1vw, 15px);
+                height: 12vw;
+                overflow-y: hidden;
+            }
+        }
+
+        .article_solved {
+            position: absolute;
+            width: 28vw;
+            height: 45vw;
+            border-radius: 20px;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.33);
+            backdrop-filter: blur(3px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-backdrop-filter: blur(3px);
+
+            span {
+                transform: rotate(-60deg);
+                font-size: 5vw;
+                color: white;
+                text-shadow: black 2px 3px;
+            }
+        }
+    }
+
+    .article:hover {
+        transition: .5s;
+        transform: scale(1.05);
+    }
+}
+

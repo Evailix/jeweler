@@ -1,0 +1,24 @@
+main {
+    margin: 10%;
+    span {
+        font-size: clamp(16px, 2vw, 20px);
+        background-color: var(--alight);
+        padding: 3vw;
+        border-radius: 2vw;
+        justify-content: start;
+    }
+}
+
+h6 {
+    all: unset;
+    display: block;
+    font-size: clamp(18px, 2.5vw, 30px);
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.no_points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

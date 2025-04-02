@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{error_code}} помилка</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <main class="error_img">
+            <img src="https://http.cat/images/{{error_code}}.jpg">
+        </main>
+        {% include 'footer.html' %}
+    </body>
+</html>

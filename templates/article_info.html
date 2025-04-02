@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>{{ article_title }}</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/article_info.css">
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <main>
+            <div class="item">
+                <div class="item_info">
+                    <img src="/static/img/tovars/{{ article_type }}/{{ article_id }}.webp">
+                    <span class="title">{{ article_title }}</span>
+                    <div class="price">
+                        {{ article_price|safe }}
+                    </div>
+                </div>
+                <div class="item_desc">
+                    <div class="item_description">
+                        <span>{{ article_description }}</span>
+                    </div>
+                    <div class="item_material">
+                        <span>{{ article_material }}</span>
+                    </div>
+                    {{ article_to_cart|safe }}
+                </div>
+            </div>
+        </main>
+        {% include 'footer.html' %}
+    </body>
+</html>

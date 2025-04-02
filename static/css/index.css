@@ -1,0 +1,108 @@
+
+.scroler {
+    z-index: 10;
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    height: calc(80vw * 0.52734375);
+    .cont {
+        width: 244vw;
+        position: absolute;
+        top: 0;
+        left: -72vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transition-duration: 1s;
+        .scroler_img {
+            width: 80vw;
+            transition-duration: 1s;
+        }
+        #scroler_img_0 {
+            filter: blur(4px);
+        }
+       #scroler_img_2 {
+           filter: blur(4px);
+       }
+    }
+    .indicators {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80px;
+        height: 22px;
+        bottom: 10px;
+        left: calc(50% - 40px);
+        .indicator {
+            cursor: pointer;
+            transition-duration: 1s;
+            background-color: var(--alight);
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+        }
+        #indicator_1 {
+            background-color: var(--adark);
+        }
+    }
+
+}
+
+.perls {
+    border-radius: 30px;
+    margin: 60px 0 60px 0;
+    padding: 0;
+    width: 95vw;
+    height: auto;
+    background-color: var(--alight);
+
+    .top_text {
+        width: 100%;
+        text-align: center;
+        font-size: clamp(20px, 3.5vw, 50px);
+    }
+
+    .top_elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .top_element {
+        cursor: pointer;
+        width: 25vw;
+        height: 25vw;
+        margin: 30px 20px;
+        background-size: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            font-size: clamp(15px, 2vw, 30px);
+            text-align: center;
+            justify-content: center;
+            line-height: 100%;
+            width: 40%;
+            height: 20%;
+            background-color: white;
+            border-radius: 10px 0;
+        }
+    }
+
+    .top_element:first-child, .top_element:last-child {
+        margin-top: 10vw;
+    }
+
+    .top_element:hover {
+        transition: .5s;
+        transform: scale(1.05);
+    }
+
+}

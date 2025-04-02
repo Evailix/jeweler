@@ -1,0 +1,42 @@
+.page_info_filter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.page_name {
+    background-color: var(--adark);
+    width: 30vw;
+    height: 5vw;
+    line-height: 5vw;
+    margin: 1vw 0 2vw 8vw;
+    font-size: clamp(15px, 2vw, 30px);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.page_filter {
+    height: 5vw;
+    margin: 0 0 0 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        transition-duration: .25s;
+        cursor: pointer;
+        width: 12vw;
+        background-color: var(--adark);
+        border-radius: 15px;
+        padding: .3vw;
+        margin: .5vw;
+        font-size: clamp(15px, 2vw, 30px);
+        text-align: center;
+    }
+
+    #filter_0 {
+        background-color: var(--alight);
+    }
+}
